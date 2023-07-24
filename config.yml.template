@@ -4,24 +4,24 @@
 
 ---
 # midgard common settings
-title: "Changkun"
-domain: changkun.de # domain that runs midgard server
+title: "midgard"
+domain: ${MIDGARD_DOMAIN} # domain that runs midgard server
 
 # midgard server settings
 # these settings are only used in server mode (run under `mg server`)
 server:
   addr: 0.0.0.0:80
-  mode: debug # or debug/release/test
+  mode: release # or debug/release/test
   store: # data folder is in ./data
     prefix: /midgard # access via changkun.de/midgard/*
     backup:
-      enable: true # enable backup
+      enable: ${MIDGARD_BACKUP_ENABLED} # enable backup
       interval: 60 # every hour
-      repo: https://github.com/changkun/midgard-data.git
+      repo: ${MIDGARD_BACKUP_REPO} # backup repo
   auth:
     # the following two configures your midgard credentials
-    user: changkun
-    pass: aBWJnteJbt!j3G!qehLnJmbcgLqkkXuEusz9m4@JeqUqwZD*Dc
+    user: ${MIDGARD_USER} # username
+    pass: ${MIDGARD_PASS} # password
 
 # midgard daemon settings
 # these settings are only used in daemon mode (run under `mg daemon run`)
