@@ -5,7 +5,7 @@
 ---
 # midgard common settings
 title: "midgard"
-domain: ${MIDGARD_DOMAIN} # domain that runs midgard server
+domain: ${MIDGARD_DOMAIN}.zeabur.app # domain that runs midgard server
 
 # midgard server settings
 # these settings are only used in server mode (run under `mg server`)
