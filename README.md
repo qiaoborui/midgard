@@ -4,6 +4,10 @@ English | [中文](./README.cn.md)
 
 midgard is a universal clipboard service, it supports macOS/Linux/Windows/iOS.
 
+## Deploy
+[!Deploy on Zeabur](https://zeabur.com/button.svg)](https://zeabur.com/templates/SJV7BR)
+Use Zeabur for one-click deployment
+
 ## Docs
 
 - [Installation](./docs/install.md)
